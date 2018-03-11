@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Classify</title>
+</head>
+<link type="text/css" rel="stylesheet" href="plugin/bootstrap/css/bootstrap.css">
+<link href="plugin/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="plugin/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+<link rel="stylesheet" href="CSS/StyleOfLee.css">
+<link rel="stylesheet" href="CSS/W3.css">
+<link rel="stylesheet" href="plugin/font-awesome-4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="plugin/jquery/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="plugin/bootstrap/js/tether.js"></script>
+<script type="text/javascript" src="plugin/bootstrap/js/bootstrap.min.js"></script>
+<style type="text/css" rel="stylesheet">
+    body{
+        padding: 0;
+        margin: 0;
+    }
+    a, a:hover, a:visited{
+        text-decoration: none;
+    }
+    @keyframes classify-nav-shake {
+        0%, 100% {transform: translateX(0)}
+        10%, 50%, 90% {transform: translateX(-2px) rotate(-0.3deg)}
+        30%, 70% {transform: translateX(-2px) rotate(0.3deg)}
+        20%, 60% {transform: translateX(2px) rotate(0.3deg)}
+        40%, 80% {transform: translateX(2px) rotate(-0.3deg)}
+    }
+    .classify-nav-div{
+        padding-top: 10px;
+    }
+    .classify-nav{
+        padding: 10px 5px 10px 5px;
+    }
+    .classify-img{
+        border-radius: 10px;
+    }
+    .classify-img img{
+        border-radius: 10px;
+    }
+    .classify-img:hover{
+        animation: classify-nav-shake 1s;
+    }
+    /*弹出框*/
+    .enlarge{
+        background-color: rgba(220, 220, 220, 0.8);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: fixed;
+        z-index: 9999;
+        display: none;
+    }
+    .enlarge-div{
+        width: 0;
+        height: 0;
+        background-color: white;
+        border-radius: 30px;
+    }
+</style>
+<style type="text/css" rel="stylesheet">
+    ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    li{
+        list-style-type: none;
+        position: relative;
+    }
+    .classify-single{
+        text-align: center;
+        padding: 10px 7px 15px 7px;
+        border-radius: 10px;
+    }
+    .classify-single img{
+        border-radius: 20px;
+    }
+    .classify-single:hover{
+        transition: box-shadow 0.5s;
+        box-shadow: 0px 0px 3px 5px rgba(220, 220, 220, 1);
+
+    }
+    .t-name{
+        font-weight: bold;
+        padding-top: 5px;
+    }
+    .t-cover i{
+        font-size: 40px;
+    }
+    .classify-all{
+        display: none;
+    }
+</style>
+<body>
+<div id="top-navigate" class="top-navigate-display">
+    <span id="search" style="cursor:pointer;"><i class="fa fa-search"></i></span>
+    <span id="title" style="cursor:pointer;"><p>LC-STAR RAW</p></span>
+    <span id="shopping-cart" style="cursor:pointer;"><i class="fa fa-shopping-cart"></i></span>
+</div>
+<div id="search-bar">
+    <i class="fa fa-search"></i>
+    <input class="w3-input w3-animate-input" type="text" placeholder="Search">
+    <i class="fa fa-times fa-2x"></i>
+</div>
+
+<div class="enlarge">
+    <div class="classify-pop">
+        <div class="container">
+            <div class="row" style="padding-top: 40px">
+                <div class="col-lg-5">
+                    <div><img src="IMG/ChenLiang/T_shirt/T_SHIRT_1.jpg"></div>
+                </div>
+                <div class="col-lg-7">
+                    ONE-PUNCH MAN
+                    One-Punch Man (Japanese: ワンパンマン Hepburn: Wanpanman) is an ongoing Japanese superhero parody webcomic created by an author using the pseudonym One[4] which began publication in early 2009.
+                    The series quickly went viral, surpassing 7.9 million hits in June 2012.[6].The Japanese shortened name Wanpanman is a play on the long-running children's character Anpanman
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <a href="details.html" target="_blank"><button class="btn btn-info btn-md btn-block btn-detail" role="button">Show Detail</button></a>
+                        </div>
+                        <div class="col-lg-6">
+                            <button class="btn btn-danger btn-md btn-block btn-close" role="button">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <div class="container">
+        <div class="row" style="width: 100%; height: 200px"></div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="row">
+                    <div class="col-lg-2 col-md-4 col-sm-2 col-xs-3 classify-nav-div">
+                        <div class="classify-nav"><div class="classify-img"><img src="IMG/ChenLiang/classify/CL1.png" width="100%"></div></div>
+                        <div class="classify-nav"><div class="classify-img"><img src="IMG/ChenLiang/classify/CL2.png" width="100%"></div></div>
+                        <div class="classify-nav"><div class="classify-img"><img src="IMG/ChenLiang/classify/CL3.png" width="100%"></div></div>
+                    </div>
+                    <div class="col-lg-10 col-md-8 col-sm-10 col-xs-9">
+                            <div class="classify-all">
+                                <ul>
+                                    <li><div class="classify-single"><img src="IMG/ChenLiang/T_shirt/T_SHIRT_1.jpg"><br><div class="t-abstract"><div class="t-name">Interstellar Journey</div>by buko</div></div></li>
+                                    <li><div class="classify-single"><img src="IMG/ChenLiang/T_shirt/T_SHIRT_2.jpg"><br><div class="t-abstract"><div class="t-name">Space and Time</div>by buko</div></div></li>
+                                    <li><div class="classify-single"><img src="IMG/ChenLiang/T_shirt/T_SHIRT_3.jpg"><br><div class="t-abstract"><div class="t-name">Dive in</div>by buko</div></div></li>
+                                    <li><div class="classify-single"><img src="IMG/ChenLiang/T_shirt/T_SHIRT_4.jpg"><br><div class="t-abstract"><div class="t-name">Cosmic Love</div>by buko</div></div></li>
+                                    <li><div class="classify-single"><img src="IMG/ChenLiang/T_shirt/T_SHIRT_5.jpg"><br><div class="t-abstract"><div class="t-name">Almost Full</div>by buko</div></div></li>
+                                    <li><div class="classify-single"><img src="IMG/ChenLiang/T_shirt/T_SHIRT_6.jpg"><br><div class="t-abstract"><div class="t-name">Chilling in Space</div>by timea</div></div></li>
+                                    <li><div class="classify-single"><img src="IMG/ChenLiang/T_shirt/T_SHIRT_7.jpg"><br><div class="t-abstract"><div class="t-name">Mix It Up</div>by timea</div></div></li>
+                                    <li><div class="classify-single"><img src="IMG/ChenLiang/T_shirt/T_SHIRT_8.jpg"><br><div class="t-abstract"><div class="t-name">Space Tune</div>by ChinUp</div></div></li>
+                                    <li><div class="classify-single"><img src="IMG/ChenLiang/T_shirt/T_SHIRT_9.jpg"><br><div class="t-abstract"><div class="t-name">the moose is loose</div>by ChinUp</div></div></li>
+                                    <li><div class="classify-single"><img src="IMG/ChenLiang/T_shirt/T_SHIRT_10.jpg"><br><div class="t-abstract"><div class="t-name">sup panda</div>by buko</div></div></li>
+                                    <li><div class="classify-single"><img src="IMG/ChenLiang/T_shirt/T_SHIRT_11.jpg"><br><div class="t-abstract"><div class="t-name">the dark Moon</div>by buko</div></div></li>
+                                    <li><div class="classify-single"><img src="IMG/ChenLiang/T_shirt/T_SHIRT_12.jpg"><br><div class="t-abstract"><div class="t-name">RAYPAI</div>by ChinUp</div></div></li>
+                                    <li><div class="classify-single"><img src="IMG/ChenLiang/T_shirt/T_SHIRT_13.jpg"><br><div class="t-abstract"><div class="t-name">Sweat More</div>by buko</div></div></li>
+                                    <li><div class="classify-single"><img src="IMG/ChenLiang/T_shirt/T_SHIRT_14.jpg"><br><div class="t-abstract"><div class="t-name">Good Vibes</div>by ChinUp</div></div></li>
+                                    <li><div class="classify-single"><img src="IMG/ChenLiang/T_shirt/T_SHIRT_15.jpg"><br><div class="t-abstract"><div class="t-name">Gray Wolf</div>by buko</div></div></li>
+                                    <li><div class="classify-single"><img src="IMG/ChenLiang/T_shirt/T_SHIRT_16.jpg"><br><div class="t-abstract"><div class="t-name">Kimmunity</div>by buko</div></div></li>
+                                    <li><div class="classify-single"><img src="IMG/ChenLiang/T_shirt/T_SHIRT_17.jpg"><br><div class="t-abstract"><div class="t-name">ByteFrenzee</div>by buko</div></div></li>
+                                    <li><div class="classify-single"><img src="IMG/ChenLiang/T_shirt/T_SHIRT_18.jpg"><br><div class="t-abstract"><div class="t-name">security</div>by buko</div></div></li>
+                                    <li><div class="classify-single"><img src="IMG/ChenLiang/T_shirt/T_SHIRT_19.jpg"><br><div class="t-abstract"><div class="t-name">Gokyo-No-Waza</div>by buko</div></div></li>
+                                    <li><div class="classify-single"><img src="IMG/ChenLiang/T_shirt/T_SHIRT_20.jpg"><br><div class="t-abstract"><div class="t-name">Silence is Golden</div>by buko</div></div></li>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 底部版权 -->
+        <div id="before-footer" class="row" style="padding-top: 10px; padding-bottom: 70px;">
+        </div>
+        <div id="footer" style="padding:10px 0; width:100%; text-align: center">
+            <center><p>Copyright &copy; 2017 <a href="javascript:void(0);" title="LC Team"
+                                                                       target="_top">LC Team</a> All Rights Reserved.</p></center>
+        </div>
+        <!---->
+    </div>
+<div style="position: relative;height: 100px;background-color: #0f0f0f;display: flex;align-items: center;justify-content: center;">
+    <p style="color: white;font-family: 'Ubuntu', sans-serif;">Copyright © 2017 LC Team All Rights Reserved.</p>
+</div>
+</body>
+<script>
+    $(document).ready(function () {
+        $(".classify-single").click(function () {
+            var width = window.innerWidth
+            if(width <= 760){
+                window.location.href = "details.html"
+            }else{
+                this_y = $(this).position().top
+                this_x = $(this).position().left
+                width = $(this).outerWidth()
+                height = $(this).outerHeight()
+                scroll_Top = $(document).scrollTop()
+                window_height = window.innerHeight
+                window_width = window.innerWidth
+                var div = $("<div class='enlarge-div'></div>")
+                div.append($(".classify-pop"))
+                div.css({'position': 'absolute','z-index': 99999, 'top': window_height/2, 'left': window_width/2, 'width': 0, 'height': 0})
+                $(".enlarge").append(div).fadeIn(500)
+                div.css({'width': '600px', 'height': '400px', 'top': (window_height - 400)/2, 'left': (window_width-600)/2})
+                div.fadeIn(500)
+            }
+        })
+    })
+    $(document).ready(function () {
+        $(".btn-close").click(function () {
+            $(".enlarge").fadeOut("slow")
+        })
+    })
+</script>
+<script type="text/javascript" src="JS/PageJSOfCL.js"></script>
+</html>

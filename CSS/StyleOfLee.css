@@ -1,0 +1,445 @@
+@font-face {
+    font-family: Ubuntu;
+    src: url(../Fonts/Ubuntu-R.ttf);
+}
+
+@font-face {
+    font-family: Ubuntu-B;
+    src: url(../Fonts/UbuntuMono-B.ttf);
+}
+
+@font-face {
+    font-family: TitilliumWeb;
+    src: url(../Fonts/TitilliumWeb-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#top-navigate {
+    position: fixed;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    color: aliceblue;
+    background-color: #303030;
+    width: 100%;
+    height: 54px;
+
+    z-index: 6;
+}
+
+.top-navigate-close {
+    top: -54px;
+    transition: top 250ms ease-in 0ms, visibility linear;
+}
+
+.top-navigate-display {
+    top: 0px;
+    transition: top 250ms ease-in 0ms, visibility linear;
+}
+
+#search {
+    margin-left: 5vw;
+}
+
+#title {
+    font-size: x-large;
+}
+
+#shopping-cart {
+    margin-right: 5vw;
+}
+
+#search-bar {
+    top: 0;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: white;
+    z-index: 1;
+}
+
+.search-bar-display {
+    -webkit-transform: translateY(54px) translateZ(0);
+    transform: translateY(54px) translateZ(0);
+    -webkit-transition: -webkit-transform .15s ease-in, visibility 0s linear 0s;
+    transition: transform 150ms ease-in 0ms, visibility linear;
+}
+
+.search-bar-close {
+    -webkit-transform: translateY(0px) translateZ(0);
+    transform: translateY(0px) translateZ(0);
+    -webkit-transition: -webkit-transform .15s ease-in, visibility 0s linear 0s;
+    transition: transform 150ms ease-in 0ms, visibility linear;
+}
+
+#background {
+    margin-top: 54px;
+    background-image: url("../IMG/Lee/BACKGROUND.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    filter: brightness(0.95);
+    -webkit-animation: scale 40s infinite linear;
+}
+
+@-webkit-keyframes scale {
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    50% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+#lc-logo {
+    position: fixed;
+    font-family: 'TitilliumWeb', sans-serif;
+    color: white;
+}
+
+#logo-line-1 {
+    line-height: 5vmax;
+    letter-spacing: 5px;
+    font-size: 5vmax;
+    text-indent: 13px;
+}
+
+#logo-line-2 {
+    line-height: 7vmax;
+    text-indent: 7px;
+    font-size: 10vmax;
+    letter-spacing: 13px;
+}
+
+#logo-line-3 {
+    line-height: 12vmax;
+    font-size: 15vmax;
+    letter-spacing: 2px;
+}
+
+#scroll-down {
+    position: fixed;
+    bottom: 10vh;
+
+    font-family: 'TitilliumWeb', sans-serif;
+    color: white;
+}
+
+#slide-navigate {
+    width: 100%;
+    margin-bottom: 3%;
+}
+
+.slide-navigate-float {
+    position: relative;
+    z-index: 5;
+}
+
+.slide-navigate-fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 6;
+    top: 54px;
+    background-color: white;
+    -webkit-transform: translateY(-54px) translateZ(0);
+    transform: translateY(-54px) translateZ(0);
+    transition: transform 250ms ease-in 0ms, visibility linear;
+}
+
+.slide-navigate-ul {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 4vh;
+}
+
+.slide-navigate-ul li {
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+#main-content{
+    margin-top: 8%;
+}
+
+.img{
+    cursor:pointer;
+}
+
+#img-1 {
+    width: 100%;
+    margin-bottom: 20%;
+}
+
+@media screen and (max-width: 600px){
+    #img-1-main-img{
+        width: 70vw;
+        margin:auto;
+        overflow: hidden;
+    }
+}
+@media screen and (min-width:600px){
+    #img-1-main-img {
+        width: 70vw;
+        margin-left: 16%;
+        overflow: hidden;
+    }
+}
+
+#img-1-main-img img {
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+}
+
+#img-1-small-img {
+    margin-left: 6%;
+    margin-top: -10%;
+    margin-bottom: 5%;
+}
+
+#img-1-num {
+    font-size: 7vw;
+    color: white;
+    font-weight: 900;
+    margin-left: 7%;
+    margin-top: -13%;
+}
+
+@media screen and (max-width: 600px) {
+    #img-1-detail {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    #img-1-detail {
+        margin-left: 26%;
+        margin-top: 12%;
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+        align-items: center;
+        font-family: 'Ubuntu', sans-serif;
+    }
+
+}
+
+@media screen and (max-width: 750px) {
+    #img-2{
+        width: 100%;
+        margin-bottom: 40%;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    #img-2 {
+        width: 100%;
+        margin-bottom: 20%;
+    }
+}
+
+@media screen and (max-width: 750px){
+    #img-2-main-img{
+        width:63vw;
+        margin: auto;
+        transform: scale(1.1);
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    #img-2-main-img {
+        width: 63vw;
+        margin-left: 4%;
+        overflow: hidden;
+    }
+}
+
+#img-2-main-img img {
+    -webkit-transform: scale(1.4);
+    transform: scale(1.4);
+}
+
+#img-2-small-img {
+    margin-top: -38%;
+    margin-left: 62%;
+    margin-bottom: 5%;
+}
+
+#img-2-num {
+    font-size: 7vw;
+    color: white;
+    font-weight: 900;
+    margin-left: 64%;
+    margin-top: -13%;
+}
+
+@media screen and (max-width: 750px) {
+    #img-2-detail {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    #img-2-detail {
+        width: 20vw;
+        margin-left: 71vw;
+        font-family: 'Ubuntu', sans-serif;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #img-3 {
+        width: 100%;
+        margin-bottom: 40%;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    #img-3 {
+        width: 100%;
+        margin-bottom: 20%;
+    }
+}
+
+@media screen and (max-width:700px){
+    #img-3-main-img{
+        width:54vw;
+        margin: auto;
+        transform: scale(1.2);
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-width:700px) {
+    #img-3-main-img {
+        width: 54vw;
+        margin-left: 33%;
+        overflow: hidden;
+    }
+}
+
+#img-3-main-img img {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+#img-3-small-img {
+    margin-top: -44%;
+    margin-left: 81%;
+    margin-bottom: 5%;
+}
+
+#img-3-num {
+    font-size: 7vw;
+    color: white;
+    font-weight: 900;
+    margin-left: 83%;
+    margin-top: -13%;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    #img-3-detail {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    #img-3-detail {
+        margin-top: 17%;
+        margin-left: 10%;
+        width: 49%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        font-family: 'Ubuntu', sans-serif;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #img-4 {
+        width: 100%;
+        margin-bottom: 27%;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    #img-4 {
+        width: 100%;
+        margin-bottom: 27%;
+    }
+}
+
+@media screen and (max-width: 700px){
+    #img-4-main-img{
+        width:62vw;
+        margin: auto;
+        overflow: hidden;
+    }
+}
+
+
+@media screen and (min-width: 700px) {
+    #img-4-main-img {
+        width: 62vw;
+        margin-left: 34%;
+        overflow: hidden;
+    }
+}
+
+#img-4-main-img img {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+#img-4-small-img {
+    margin-top: -57%;
+    margin-left: 24%;
+}
+
+#img-4-num {
+    font-size: 7vw;
+    color: white;
+    font-weight: 900;
+    margin-left: 26%;
+    margin-top: -9%;
+}
+
+@media screen and (max-width: 700px) {
+    #img-4-detail {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    #img-4-detail {
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        font-family: 'Ubuntu', sans-serif;
+    }
+}

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Details</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="device-width, initial-scale=1.0">
+    <!--
+    <link href="favicon.png" rel="shortcut icon">
+    -->
+    <link href="plugin/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="plugin/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="plugin/jquery/css/jquery.vm-carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/StyleOfLee.css">
+    <link href="plugin/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="plugin/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--[if lt IE 9]>
+    <script src="plugin/axure_rp/js/html5shiv.min.js"></script>
+    <script src="plugin/axure_rp/js/respond.min.js"></script>
+    <![endif]-->
+    <style>
+        body {
+            background-color: rgb(238, 238, 238)
+        }
+
+        #main {
+            min-height: 100%;
+            position: relative;
+            padding-top: 54px;
+        }
+
+        .vmc-centered {
+            padding: 10px 0;
+        }
+
+        .vmc-centered img {
+            transition: all 0.3s ease;
+        }
+
+        .vmc-centered .vmc_active img {
+            transform: scale(1.0);
+        }
+
+    </style>
+</head>
+<body>
+<div id="top-navigate" class="top-navigate-display">
+    <span id="search" style="cursor:pointer;"><i class="fa fa-search"></i></span>
+    <span id="title" style="cursor:pointer;"><p>LC-STAR RAW</p></span>
+    <span id="shopping-cart" style="cursor:pointer;"><i class="fa fa-shopping-cart"></i></span>
+</div>
+<div id="search-bar">
+    <i class="fa fa-search"></i>
+    <input class="w3-input w3-animate-input" type="text" placeholder="Search">
+    <i class="fa fa-times fa-2x"></i>
+</div>
+<div id="main" class="container">
+    <div class="row">
+        <!-- 原图 -->
+        <div id="div-original" class="col-xs-12 col-sm-12 col-md-8 col-lg-6">
+            <img id="pattern0-male-original-gray" class="img-responsive"
+                 src="IMG/Shuyuan/pattern0/male/original/gray.jpg" alt="model-original"/>
+        </div>
+        <!-- 性别 -->
+        <div id="div-thumbnail"
+             class="col-xs-10 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-0 col-lg-5 col-lg-offset-0"
+             style="padding:20px 0;">
+            <span style="margin-left:15px;padding:5px">Sex:</span>
+            <a href="javascript:void(0);" class="label">
+                <img id="pattern0-male-thumbnail-gray" class="img-rounded sex"
+                     src="IMG/Shuyuan/pattern0/male/thumbnail/gray.jpg" alt="model-male"/>
+            </a>
+            <a href="javascript:void(0);" class="label">
+                <img id="pattern0-female-thumbnail-gray" class="img-rounded sex"
+                     src="IMG/Shuyuan/pattern0/female/thumbnail/gray.jpg" alt="model-female"/>
+            </a>
+        </div>
+        <!-- 颜色 -->
+        <div id="div-color"
+             class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-3 col-md-offset-0 col-lg-5 col-lg-offset-0"
+             style="padding:20px 0;">
+            <span style="margin-left:15px;padding:5px">Color:</span>
+            <a id="red" href="javascript:void(0);" class="label color"
+               style="background-color:rgb(192,2,2);padding:5px">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a id="purple" href="javascript:void(0);" class="label color"
+               style="background-color:rgb(90,57,110);padding:5px">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a id="gray" href="javascript:void(0);" class="label color"
+               style="background-color:rgb(200,200,200);;padding:5px">&nbsp;&nbsp;&nbsp;&nbsp;</a>
+        </div>
+        <!-- 大小 -->
+        <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-3 col-md-offset-0 col-lg-5 col-lg-offset-0"
+             style="padding:20px 0;">
+            <span style="margin-left:15px;padding:5px">Size:&nbsp;</span>
+            <a id="size-s" href="javascript:void(0);" class="size label label-default" style="padding:5px">S</a>
+            <a id="size-m" href="javascript:void(0);" class="size label label-default" style="padding:5px">M</a>
+            <a id="size-l" href="javascript:void(0);" class="size label label-default" style="padding:5px">L</a>
+            <a id="size-xl" href="javascript:void(0);" class="size label label-default" style="padding:5px">XL</a>
+        </div>
+        <!-- 加入购物车按钮 -->
+        <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-3 col-md-offset-0 col-lg-3 col-lg-offset-0">
+            <a href="shoppingCart.html" class="btn btn-default btn-md btn-block" role="button">Add To Cart</a>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-5" style="padding:5px 0;">
+            <!-- 占位 -->
+        </div>
+        <!-- 购买按钮 -->
+        <div class="col-xs-8 col-xs-offset-2 col-sm-6 col-sm-offset-3 col-md-3 col-md-offset-0 col-lg-3 col-lg-offset-0">
+            <a id="buy" href="shoppingCart.html" class="btn btn-info btn-md btn-block" role="button">Buy Now</a>
+        </div>
+    </div>
+    <!-- 图案推荐，图片 id 存储图案和颜色信息 -->
+    <div class="row" style="padding:20px">
+        <h5 class="text-center text-muted" style="font-family:华文新魏">You may also like the following patterns:</h5>
+    </div>
+    <div id="div-recommended" class="row">
+        <ul class="vmcarousel-centered-infitine vmc-centered">
+            <li>
+                <a href="javascript:void(0);">
+                    <img id="pattern0-gray" src="IMG/Shuyuan/pattern0.jpg" class="recommended-pattern img-thumbnail"/>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <img id="pattern1-gray" src="IMG/Shuyuan/pattern1.jpg" class="recommended-pattern img-thumbnail"/>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <img id="pattern2-white" src="IMG/Shuyuan/pattern2.jpg" class="recommended-pattern img-thumbnail"/>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <img id="pattern3-black" src="IMG/Shuyuan/pattern3.jpg" class="recommended-pattern img-thumbnail"/>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <img id="pattern4-gray" src="IMG/Shuyuan/pattern4.jpg" class="recommended-pattern img-thumbnail"/>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <img id="pattern5-white" src="IMG/Shuyuan/pattern5.jpg" class="recommended-pattern img-thumbnail"/>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <img id="pattern6-black" src="IMG/Shuyuan/pattern6.jpg" class="recommended-pattern img-thumbnail"/>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);">
+                    <img id="pattern7-gray" src="IMG/Shuyuan/pattern7.jpg" class="recommended-pattern img-thumbnail"/>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- 底部版权 -->
+    <div id="before-footer" class="row" style="padding-top: 10px; padding-bottom: 70px;">
+    </div>
+    <div id="footer" class="row" style="position:absolute; bottom:0; padding:10px 0; width:100%;">
+        <p class="text-center text-muted">Copyright &copy; 2017 <a href="javascript:void(0);" title="LC Team"
+                                                                   target="_top">LC Team</a> All Rights Reserved.</p>
+    </div>
+    <!---->
+</div>
+<script src="plugin/jquery/js/jquery-3.2.1.min.js"></script>
+<script src="plugin/axure_rp/js/jquery.vm-carousel.js"></script>
+<script src="plugin/axure_rp/js/bootstrap.min.js"></script>
+<script src="plugin/axure_rp/js/modernizr.js"></script>
+<script>
+
+    $(document).ready(function () {
+
+        /* 以下方法与图片位置有关 */
+
+        // 根据模特和颜色参数切换图片
+        function switchModel(img, pattern, sex, size, color) {
+            // 修改图片
+            $(img).attr("src", "IMG/Shuyuan/" + pattern + "/" + sex + "/" + size + "/" + color + ".jpg");
+            // 修改 img 的 id
+            $(img).attr("id", pattern + "-" + sex + "-" + size + "-" + color);
+        }
+
+
+        // 根据图案和性别参数切换颜色区域
+        function switchColor(pattern, sex) {
+
+            var span = '<span style="margin-left:15px;padding:5px">Color:</span>';
+            var gray = '<a id="gray" href="javascript:void(0);" class="label color" style="background-color:rgb(200,200,200);margin-left:3px;padding:5px">&nbsp;&nbsp;&nbsp;&nbsp;</a>';
+            var red = '<a id="red" href="javascript:void(0);" class="label color" style="background-color:rgb(192,2,2);margin-left:3px;padding:5px">&nbsp;&nbsp;&nbsp;&nbsp;</a>';
+            var white = '<a id="white" href="javascript:void(0);" class="label color" style="background-color:rgb(255,255,255);margin-left:3px;padding:5px">&nbsp;&nbsp;&nbsp;&nbsp;</a>';
+            var dark = '<a id="dark" href="javascript:void(0);" class="label color" style="background-color:rgb(11,15,40);margin-left:3px;padding:5px">&nbsp;&nbsp;&nbsp;&nbsp;</a>';
+            var purple = '<a id="purple" href="javascript:void(0);" class="label color" style="background-color:rgb(90,57,110);margin-left:3px;padding:5px">&nbsp;&nbsp;&nbsp;&nbsp;</a>';
+            var black = '<a id="black" href="javascript:void(0);" class="label color" style="background-color:rgb(0,0,0);margin-left:3px;padding:5px">&nbsp;&nbsp;&nbsp;&nbsp;</a>';
+
+            switch (pattern) {
+                case "pattern0":
+                    if (sex === "male") {
+                        $("#div-color").html(span + red + purple + gray);
+                    }
+                    else if (sex === "female") {
+                        $("#div-color").html(span + red + dark + gray + white);
+                    }
+                    break;
+
+                case "pattern1":
+                    if (sex === "male") {
+                        $("#div-color").html(span + red + gray);
+                    }
+                    else if (sex === "female") {
+                        $("#div-color").html(span + red + dark + gray + white);
+                    }
+                    break;
+
+                case "pattern2":
+                    if (sex === "male") {
+                        $("#div-color").html(span + black + purple + gray + white);
+                    }
+                    else if (sex === "female") {
+                        $("#div-color").html(span + red + black + white);
+                    }
+                    break;
+
+                case "pattern3":
+                    if (sex === "male") {
+                        $("#div-color").html(span + black);
+                    }
+                    else if (sex === "female") {
+                        $("#div-color").html(span + black);
+                    }
+                    break;
+
+                case "pattern4":
+                    if (sex === "male") {
+                        $("#div-color").html(span + purple + gray + white);
+                    }
+                    else if (sex === "female") {
+                        $("#div-color").html(span + gray + white);
+                    }
+                    break;
+
+                case "pattern5":
+                    if (sex === "male") {
+                        $("#div-color").html(span + red + black + purple + gray + white);
+                    }
+                    else if (sex === "female") {
+                        $("#div-color").html(span + red + black + white);
+                    }
+                    break;
+
+                case "pattern6":
+                    if (sex === "male") {
+                        $("#div-color").html(span + black + dark);
+                    }
+                    else if (sex === "female") {
+                        $("#div-color").html(span + black);
+                    }
+                    break;
+
+                case "pattern7":
+                    if (sex === "male") {
+                        $("#div-color").html(span + black + purple + gray + white);
+                    }
+                    else if (sex === "female") {
+                        $("#div-color").html(span + black + gray + white);
+                    }
+                    break;
+
+            }
+        }
+
+
+        // Sex 切换
+        $("#div-thumbnail").on("click", ".sex", function () {
+            //获取参数
+            var img = $("#div-original").children()[0];
+            var params = $(this).attr("id").split("-");
+            // 先改变颜色区域
+            switchColor(params[0], params[1]);
+            // 再切换原图
+            switchModel(img, params[0], params[1], "original", params[3]);
+        });
+
+
+        // Color 切换
+        $("#div-color").on("click", ".color", function () {
+            var original = $("#div-original").children()[0];
+            var params = $(original).attr("id").split("-");
+            var color = $(this).attr("id"); // 点击的颜色为 this
+            // 注意 thumbnail 的 color 应与 original 一直相同
+            var thumbnail = $("#" + params[0] + "-" + params[1] + "-thumbnail-" + params[3]);
+            // 切换 thumbnail
+            switchModel(thumbnail, params[0], params[1], "thumbnail", color);
+            // 切换 original
+            switchModel(original, params[0], params[1], "original", color);
+        });
+
+
+        // 底部推荐图案切换
+        $("#div-recommended").on("click", ".recommended-pattern", function () {
+            var params = $(this).attr("id").split("-");
+            var pattern = params[0];
+            var color = params[1];
+            var original = $("#div-original").children()[0];
+            var thumbnail = $(".sex");
+            var thumbnail_male = thumbnail[0];
+            var thumbnail_female = thumbnail[1];
+            // 切换大图
+            switchModel(original, pattern, "male", "original", color);
+
+            // 切换缩略图
+            switchModel(thumbnail_male, pattern, "male", "thumbnail", color);
+            switchModel(thumbnail_female, pattern, "female", "thumbnail", color);
+
+            // 切换颜色区域
+            switchColor(pattern, "male");
+        });
+
+        /* 以下方法与图片位置无关 */
+
+        // Size 切换
+        function switchSize(size) {
+            $(".size").removeClass("label-success");
+            $("#" + size).addClass("label-success");
+        }
+
+        $(".size").click(function () {
+            switchSize($(this).attr("id"));
+        });
+
+        // 底部推荐图案滑动效果
+        $('.vmcarousel-centered-infitine').vmcarousel({
+            centered: true,
+            start_item: 0,
+            autoplay: true,
+            infinite: true
+        });
+
+
+        // 推荐图案鼠标划过
+        $(".recommended-pattern").mouseenter(function () {
+            $(this).css({"transform": "scale(1.2)"});
+        });
+        $(".recommended-pattern").mouseleave(function () {
+            $(this).css({"transform": "scale(1.0)"});
+        });
+
+        //导航栏
+        $('#search').click(function () {
+            $('#search-bar').removeClass('search-bar-close').addClass('search-bar-display');
+        });
+        $('#search-bar').children('i:last').click(function () {
+            $('#search-bar').removeClass('search-bar-display').addClass('search-bar-close');
+        });
+        $('#title').click(function () {
+            location.href='index.html';
+        });
+        $('#shopping-cart').click(function () {
+            location.href = 'shoppingCart.html';
+        })
+
+    });
+
+</script>
+</body>
+</html>
